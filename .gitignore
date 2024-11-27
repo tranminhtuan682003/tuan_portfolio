@@ -70,3 +70,21 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+<<<<<<< HEAD
+=======
+
+# Loại trừ các file không cần thiết
+Assets/GooglePakage.meta
+Assets/GooglePakage/
+Assets/ProjectSetting.meta
+Assets/ProjectSetting/
+Assets/Scripts/FireBase/
+Assets/StreamingAssets.meta
+Assets/StreamingAssets/
+
+
+Assets/FireBase/
+Assets/firebase_unity_sdk_12.4.0/
+Assets/ExternalDependencyManager/
+Assets/Editor Default Resources/
+>>>>>>> master
