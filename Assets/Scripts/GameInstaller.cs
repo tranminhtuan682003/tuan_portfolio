@@ -1,16 +1,19 @@
 using UnityEngine;
+using Zenject;
 
-public class GameInstaller : MonoBehaviour
+public class GameInstaller : MonoInstaller
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void InstallBindings()
     {
-        
+        BindManagers();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void BindManagers()
     {
-        
+        Container.Bind<UIManager>()
+            .FromNewComponentOnNewGameObject()
+            .WithGameObjectName("UIManager")
+            .AsSingle()
+            .NonLazy();
     }
 }
